@@ -230,7 +230,8 @@ body {
 
 .card-container {
   display: flex;
-  overflow-x: auto;
+  /* overflow-x: auto; */
+  overflow-y: scroll;
   gap: 30px;
   padding-bottom: 20px;
   scrollbar-width: none; /* Hide scrollbar Firefox */
@@ -241,6 +242,7 @@ body {
 }
 
 .product-card {
+  justify-content: center;
   min-width: 300px;
   background: white;
   border-radius: 10px;
@@ -251,6 +253,7 @@ body {
 
 .product-card:hover {
   transform: translateY(-10px);
+  box-shadow: 2px  4px 4px 5px gray;
 }
 
 .img-box img {
@@ -580,21 +583,132 @@ body {
   font-size: 0.9rem;
 }
 
-/* Mobile Responsive */
+/* =========================
+   LARGE SCREENS (1200px+)
+========================= */
+@media (min-width: 1400px) {
+  .hero h1 {
+    font-size: 5.5rem;
+  }
+
+  .collections {
+    padding: 100px 8%;
+  }
+
+  .about-premium {
+    padding: 140px 10%;
+  }
+}
+
+/* =========================
+   TABLET (768px – 1024px)
+========================= */
+@media (max-width: 1024px) {
+  .hero h1 {
+    font-size: 3.5rem;
+  }
+
+  .about-container {
+    gap: 50px;
+  }
+
+  .about-image img {
+    height: 450px;
+  }
+
+  .about-text h2 {
+    font-size: 2.8rem;
+  }
+}
+
+/* =========================
+   MOBILE (max 768px)
+========================= */
 @media (max-width: 768px) {
-  .main-footer {
-    text-align: center;
-    padding: 60px 5% 20px;
+  .hero {
+    height: 85vh;
+    padding: 0 20px;
   }
-  .footer-box h3::after {
-    left: 50%;
-    transform: translateX(-50%);
+
+  .hero h1 {
+    font-size: 2.8rem;
+    line-height: 1.2;
   }
-  .social-icons {
-    justify-content: center;
+
+  .btn {
+    padding: 10px 22px;
+    font-size: 0.9rem;
   }
-  .footer-subscribe {
+
+  .product-card {
+    min-width: 240px;
+  }
+
+  .img-box img {
+    height: 280px;
+  }
+
+  .collections {
+    padding: 60px 5%;
+  }
+
+  .about-container {
     flex-direction: column;
-    gap: 10px;
+    text-align: center;
+  }
+
+  .about-image {
+    min-width: 100%;
+  }
+
+  .about-image img {
+    height: 350px;
+  }
+
+  .experience-badge {
+    right: 20px;
+    bottom: -20px;
+    padding: 20px;
+  }
+
+  .about-text {
+    min-width: 100%;
+  }
+
+  .about-text h2 {
+    font-size: 2.2rem;
+  }
+
+  .about-text p {
+    font-size: 0.95rem;
+  }
+
+  .brand-features {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* =========================
+   SMALL MOBILE (max 480px)
+========================= */
+@media (max-width: 480px) {
+  .logo {
+    font-size: 1.6rem;
+  }
+
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .experience-badge .years {
+    font-size: 2rem;
+  }
+
+  .footer-box h2.footer-logo {
+    font-size: 2rem;
   }
 }
