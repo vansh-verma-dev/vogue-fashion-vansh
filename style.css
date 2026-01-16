@@ -175,7 +175,7 @@ body {
 .hero {
   height: 100vh;
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-    url("../Gemini_Generated_Image_n8wi6tn8wi6tn8wi.png");
+    url("assits/bg.png");
   background-size: cover;
   background-position: center;
   display: flex;
