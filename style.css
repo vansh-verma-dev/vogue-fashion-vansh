@@ -2,9 +2,7 @@
   margin: 0;
   padding: 0;
 }
- body{
-  background-color: antiquewhite;
- }
+ 
 .logo{
   font-family: "Orbitron";
   font-weight: 400;
@@ -165,6 +163,25 @@ font-size: 18px;
  .shop-features i{
   color: rgb(255, 87, 45);
  }
+ 
+.Category-section{
+  margin-top: 5px;
+  width: 80vw;
+  display: flex;
+  justify-content: space-around;
+  overflow-x: scroll;
+}
+.Category-cards{
+  text-align: center;
+  height: 130px;
+  width: 120px;
+ 
+}
+.Category-cards img{
+  height: 100px;
+  width: 100%;
+}
+
 /* Mobile responsiveness */
 @media screen and (max-width: 768px) {
   body{
