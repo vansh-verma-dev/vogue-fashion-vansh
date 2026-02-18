@@ -1,19 +1,19 @@
-*{
+* {
   margin: 0;
   padding: 0;
 }
- 
-.logo{
+
+.logo {
   font-family: "Orbitron";
   font-weight: 400;
   font-style: normal;
-font-size: 30px;
+  font-size: 30px;
 }
-.logo span{
-  color: rgb(255,87,45);
+.logo span {
+  color: rgb(255, 87, 45);
   font-weight: bold;
 }
-header{
+header {
   height: auto;
   padding: 10px;
   background-color: rgb(255, 87, 45);
@@ -27,18 +27,18 @@ header ul {
   display: flex;
   list-style: none;
 }
-header ul li a{
+header ul li a {
   color: rgb(255, 255, 255);
-text-decoration: none;
-margin-left: 20px;
-font-weight: bold;
-font-size: 15px;
+  text-decoration: none;
+  margin-left: 20px;
+  font-weight: bold;
+  font-size: 15px;
 }
-header ul li a i{
+header ul li a i {
   font-size: 18px;
   color: white;
 }
-nav{
+nav {
   background-color: white;
   display: flex;
   height: auto;
@@ -51,15 +51,15 @@ nav ul {
   display: flex;
   list-style: none;
 }
-nav ul li a{
+nav ul li a {
   text-decoration: none;
   margin-left: 30px;
   font-size: 19px;
   color: black;
 }
-nav ul li a i{
+nav ul li a i {
   font-size: 20px;
-  color: rgb(255,87,45);
+  color: rgb(255, 87, 45);
 }
 header ul li a {
   position: relative;
@@ -72,7 +72,7 @@ header ul li a {
   padding: 2px 6px;
   border-radius: 50%;
 }
-/* Hamburger icon hidden on desktop */
+
 .menu-toggle {
   display: none;
   font-size: 25px;
@@ -80,7 +80,6 @@ header ul li a {
   color: white;
 }
 
-/* Top header, logo, menus same as before */
 header {
   display: flex;
   flex-wrap: wrap;
@@ -89,33 +88,33 @@ header {
   padding: 10px 20px;
   background-color: rgb(255, 87, 45);
 }
-.mobile-nav{
+.mobile-nav {
   align-items: center;
   height: auto;
   width: 100%;
   display: none;
   justify-content: space-between;
   align-items: center;
- padding-top: 10px;
+  padding-top: 10px;
 }
- 
-.mobile-nav ul{
+
+.mobile-nav ul {
   display: flex;
   list-style: none;
   padding-right: 40px;
 }
-.mobile-nav ul li a{
+.mobile-nav ul li a {
   font-size: 20px;
   background-color: gainsboro;
   padding: 5px;
   height: 25px;
   width: 25px;
   border-radius: 50%;
- margin-left: 10px;
+  margin-left: 10px;
   color: black;
 }
-.footnav{
-box-shadow: 0 -2px 10px rgba(0,0,0,0.2);
+.footnav {
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2);
 
   display: none;
   position: fixed;
@@ -123,92 +122,76 @@ box-shadow: 0 -2px 10px rgba(0,0,0,0.2);
   left: 0;
   height: auto;
   width: 100%;
- 
 }
-.footnav ul li a i{
+.footnav ul li a i {
   font-size: 20px;
   height: 25px;
   align-items: center;
   justify-content: center;
   width: 25px;
-  border-radius: 50%; 
- padding: 5px;
+  border-radius: 50%;
+  padding: 5px;
 }
-.footnav ul li a i:hover{
+.footnav ul li a i:hover {
   color: rgb(26, 25, 25);
 }
 /* Hero section images */
 #carouselExampleFade img {
   width: 100%;
-  height: 70vh;  
-  object-fit: cover; 
+  height: 70vh;
+  object-fit: cover;
 }
-.catogroy-link{
+.catogroy-link {
   padding: 10px;
   width: 100vw;
   background-color: red;
 }
- .shop-features{
+.shop-features {
   margin-top: 10px;
   display: flex;
   justify-content: center;
- border-top: 2px solid rgb(255, 87, 45);
- border-bottom: 2px solid rgb(255, 87, 45);
+  border-top: 2px solid rgb(255, 87, 45);
+  border-bottom: 2px solid rgb(255, 87, 45);
   padding-top: 5px;
- }
- .shop-features p{
+}
+.shop-features p {
   margin-left: 40px;
-font-size: 18px;
- }
- .shop-features i{
+  font-size: 18px;
+}
+.shop-features i {
   color: rgb(255, 87, 45);
- }
- 
-.Category-section{
-  margin-top: 5px;
-  width: 80vw;
-  display: flex;
-  justify-content: space-around;
-  overflow-x: scroll;
 }
-.Category-cards{
-  text-align: center;
-  height: 130px;
-  width: 120px;
- 
-}
-.Category-cards img{
-  height: 100px;
+.category-section {
   width: 100%;
+  height: 30vh;
+  background-color: black;
 }
 
 /* Mobile responsiveness */
 @media screen and (max-width: 768px) {
-  body{
+  body {
     background-color: rgba(255, 255, 255, 0.836);
   }
   nav,
-  header{
+  header {
     display: none;
   }
- .mobile-nav{
-  margin-top: 5px;
-  display: flex;
- }
- .mobile-nav p{
-  font-size: 20px;
-  padding-left: 20px;
- }
- .footnav{
-  display: block;
- }
-   #carouselExampleFade img {
-    height: 30vh; 
-  
+  .mobile-nav {
+    margin-top: 5px;
+    display: flex;
   }
-.shop-features p{
-  margin-left: 10px;
-  font-size: 12px;
+  .mobile-nav p {
+    font-size: 20px;
+    padding-left: 20px;
+  }
+  .footnav {
+    display: block;
+  }
+  #carouselExampleFade img {
+    height: 30vh;
+  }
+  .shop-features p {
+    margin-left: 10px;
+    font-size: 12px;
+  }
 }
-}
-
