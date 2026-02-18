@@ -150,7 +150,21 @@ box-shadow: 0 -2px 10px rgba(0,0,0,0.2);
   width: 100vw;
   background-color: red;
 }
-
+ .shop-features{
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+ border-top: 2px solid rgb(255, 87, 45);
+ border-bottom: 2px solid rgb(255, 87, 45);
+  padding-top: 5px;
+ }
+ .shop-features p{
+  margin-left: 40px;
+font-size: 18px;
+ }
+ .shop-features i{
+  color: rgb(255, 87, 45);
+ }
 /* Mobile responsiveness */
 @media screen and (max-width: 768px) {
   body{
@@ -175,6 +189,9 @@ box-shadow: 0 -2px 10px rgba(0,0,0,0.2);
     height: 30vh; 
   
   }
-
+.shop-features p{
+  margin-left: 10px;
+  font-size: 12px;
+}
 }
 
