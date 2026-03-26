@@ -1,235 +1,142 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>UrbanVansh | Fashion Store</title>
-<link rel="stylesheet" href="style.css">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-<link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-    />
-    <link>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" />
+    <title>Document</title>
 </head>
+
 <body>
+    <header>
+        <div class="head">
+            <div class="logo">VOGUE <span>FASHION</span></div>
+            <div class="search_input">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="search" />
+            </div>
+            <ul>
+                <li>
+                    <a href="#"><i class="fa-solid fa-heart"></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa-regular fa-user"></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa-solid fa-bell"></i></a>
+                </li>
+            </ul>
+        </div>
+        <div class="foot">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">New arrivel</a></li>
+                <li><a href="#">Men</a></li>
+                <li><a href="#">Women</a></li>
+                <li><a href="#">Streetwear</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </header>
 
-<!-- NAVBAR -->
-<nav>
-  <div class="logo">VOGUE FASHION</div>
-  <div class="nav-links" id="navLinks">
-    <a href="#">Home</a>
-    <a href="#">Men</a>
-    <a href="#">Women</a>
-    <a href="#">Kids</a>
-    <a href="#">Sale</a>
-  </div>
-  <div class="hamburger" onclick="toggleMenu()">☰</div>
-</nav>
+    <!-- ==============Hero Section====================
+    ===================================================
+    =================================================== -->
 
- 
-<!-------- HERO------- -->
-<section class="hero">
-  <div class="hero-overlay"></div>
-
+  <section class="hero">
   <div class="hero-content">
-    <h1>Redefine <span>Grace & Elegance</span></h1>
-    <p>
-      Discover premium sarees, designer lehengas and modern ethnic wear
-      crafted for today’s confident women.
-    </p>
-    <div class="hero-buttons">
-      <button class="primary-btn">Shop Women</button>
-      <button class="secondary-btn">Explore Collection</button>
+    <h1>VOGUE FASHION</h1>
+    <p>Discover premium outfits, streetwear & modern fashion for your unique lifestyle.</p>
+
+    <div class="hero-btns">
+      <button class="btn primary">Shop Now</button>
+      <button class="btn secondary">Explore</button>
     </div>
   </div>
 </section>
+  <!-- ==============product Section====================
+    ===================================================
+    =================================================== -->
 
-<!-- CATEGORY BUTTONS -->
-<section class="categories">
-  <h2>Shop by Category</h2>
-  <div class="category-buttons">
-    <button>Men</button>
-    <button>Women</button>
-    <button>Kids</button>
-    <button>Shoes</button>
-    <button>Accessories</button>
-    <button>Winter</button>
-    <button>Summer</button>
-    <button>New Arrivals</button>
-  </div>
+<section class="products">
+  <h2>    Premium Collection</h2>
+  <div id="productGrid" class="grid"></div>
 </section>
 
-<!-- PRODUCT SECTIONS (10 Rows) -->
+ <!-- ==============offer-banner Section====================
+    ===================================================
+    =================================================== -->
+<section class="offer-banner">
+  <div class="banner-content">
+    <h2>Big Fashion Sale</h2>
+    <p>Up to 70% OFF on Men, Women, Shoes & Watches. Limited Time Offer!</p>
+    <button>Shop Now</button>
+  </div>
 
-<div id="products"></div>
-
-<!-- FOOTER -->
+  <div class="banner-img">
+    <img src="https://i.pinimg.com/736x/4a/0b/55/4a0b552d7b5651f267f67f39a4c179e0.jpg" />
+  </div>
+</section>
+ <!-- ============== footer===========================
+    ===================================================
+    =================================================== -->
 <footer class="footer">
 
   <div class="footer-container">
 
-    <!-- BRAND -->
-    <div class="footer-col brand">
+    <div class="footer-box">
       <h2>VOGUE FASHION</h2>
-      <p>
-        Premium fashion store delivering modern style, comfort and quality.
-        Shop the latest trends with secure payments and fast delivery.
-      </p>
+      <p>Premium fashion store for Men, Women, Shoes & Watches. Style your personality with latest trends.</p>
 
-      <div class="socials">
-        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-        <a href="#"><i class="fa-brands fa-instagram"></i></a>
-        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
-        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+      <div class="social">
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-youtube"></i>
       </div>
     </div>
 
-    <!-- SHOP -->
-    <div class="footer-col">
-      <h3>Shop</h3>
+    <div class="footer-box">
+      <h3>Quick Links</h3>
       <ul>
-        <li><a href="#">Men</a></li>
-        <li><a href="#">Women</a></li>
-        <li><a href="#">Kids</a></li>
-        <li><a href="#">Shoes</a></li>
-        <li><a href="#">Accessories</a></li>
-        <li><a href="#">New Arrivals</a></li>
+        <li>Home</li>
+        <li>Men</li>
+        <li>Women</li>
+        <li>Shoes</li>
+        <li>Watch</li>
       </ul>
     </div>
 
-    <!-- CUSTOMER SERVICE -->
-    <div class="footer-col">
-      <h3>Customer Service</h3>
+    <div class="footer-box">
+      <h3>Help</h3>
       <ul>
-        <li><a href="#">Help Center</a></li>
-        <li><a href="#">Track Order</a></li>
-        <li><a href="#">Return & Refund</a></li>
-        <li><a href="#">Shipping Info</a></li>
-        <li><a href="#">Cancellation</a></li>
-        <li><a href="#">FAQ</a></li>
+        <li>Contact</li>
+        <li>Order Track</li>
+        <li>Return Policy</li>
+        <li>Privacy Policy</li>
       </ul>
     </div>
 
-    <!-- POLICIES -->
-    <div class="footer-col">
-      <h3>Policies</h3>
-      <ul>
-        <li><a href="#">Privacy Policy</a></li>
-        <li><a href="#">Terms & Conditions</a></li>
-        <li><a href="#">Refund Policy</a></li>
-        <li><a href="#">Cookie Policy</a></li>
-        <li><a href="#">Security</a></li>
-      </ul>
-    </div>
-
-    <!-- CONTACT -->
-    <div class="footer-col contact">
-      <h3>Contact Us</h3>
-      <p>Email: vogue@fashion.com</p>
-      <p>Phone: +91 9368549887</p>
-      <p>Address: Sardhana, Meerut</p>
-
-      <h4>Download App</h4>
-      <div class="app-buttons">
-        <a href="#" class="app-btn"><i class="fa-brands fa-google-play"></i> Play Store</a>
-        <a href="#" class="app-btn"><i class="fa-brands fa-apple"></i> App Store</a>
-      </div>
+    <div class="footer-box">
+      <h3>Newsletter</h3>
+      <p>Subscribe for latest offers & updates</p>
+      <input type="email" placeholder="Enter email">
+      <button>Subscribe</button>
     </div>
 
   </div>
 
-  <!-- PAYMENT -->
-  <div class="payment-bar">
-    <span>We Accept:</span>
-    <div class="payments">
-      <div>VISA</div>
-      <div>MASTERCARD</div>
-      <div>UPI</div>
-      <div>PAYPAL</div>
-    </div>
-  </div>
-
-  <!-- COPYRIGHT -->
-  <div class="copyright">
-    © 2026 VOGUE FASHION — All Rights Reserved
+  <div class="footer-bottom">
+    <p>© 2026 Vogue Fashion. All Rights Reserved.</p>
   </div>
 
 </footer>
-
-<script>
-
-// Mobile Menu
-function toggleMenu(){
-  document.getElementById("navLinks").classList.toggle("active");
-}
-
-// Generate 10 product sections dynamically
-
-const productsContainer = document.getElementById("products");
-
-for(let s=1; s<=10; s++){
-
-  const section = document.createElement("div");
-  section.className="product-section";
-
-  section.innerHTML = `
-  <div class="section-header">
-    <h3>Trending Collection ${s}</h3>
-  </div>
-
-  <div class="scroll-container">
-    <button class="scroll-btn left" onclick="scrollLeftRow(${s})">‹</button>
-    <div class="product-row" id="row${s}">
-      ${generateCards()}
-    </div>
-    <button class="scroll-btn right" onclick="scrollRightRow(${s})">›</button>
-  </div>
-  `;
-
-  productsContainer.appendChild(section);
-}
-
- function generateCards(){
-
-  const products = [
-    {name:"Silk Saree", img:"https://images.unsplash.com/photo-1593030761757-71fae45fa0e7"},
-    {name:"Designer Lehenga", img:"https://images.unsplash.com/photo-1602810316693-3667c854239a"},
-    {name:"Floral Kurti", img:"https://images.unsplash.com/photo-1610030469983-98e550d6193c"},
-    {name:"Anarkali Suit", img:"https://images.unsplash.com/photo-1621237817933-8b9d6e59ef3e"},
-    {name:"Party Gown", img:"https://images.unsplash.com/photo-1581044777550-4cfa60707c03"},
-    {name:"Cotton Saree", img:"https://images.unsplash.com/photo-1585487000160-6ebcfceb0d03"},
-    {name:"Bridal Lehenga", img:"https://images.unsplash.com/photo-1622296089863-eb7fc530daa8"},
-    {name:"Palazzo Set", img:"https://images.unsplash.com/photo-1596455607563-3ef5c0d9dffd"},
-    {name:"Ethnic Skirt", img:"https://images.unsplash.com/photo-1594633312681-425c7b97ccd1"},
-    {name:"Wedding Saree", img:"https://images.unsplash.com/photo-1593032457862-098a0f3b4e6b"}
-  ];
-
-  let cards="";
-
-  products.forEach(product=>{
-    cards+=`
-      <div class="card">
-        <img src="${product.img}" alt="${product.name}">
-        <h4>${product.name}</h4>
-        <div class="price">₹${Math.floor(Math.random()*4000)+1500}</div>
-        <button class="buy-btn">Buy Now</button>
-      </div>
-    `;
-  });
-
-  return cards;
-}
-
-function scrollLeftRow(id){
-  document.getElementById("row"+id).scrollLeft -= 300;
-}
-
-function scrollRightRow(id){
-  document.getElementById("row"+id).scrollLeft += 300;
-}
-
-</script>
-
 </body>
+<script src="JS/main.js"></script>
+
 </html>
