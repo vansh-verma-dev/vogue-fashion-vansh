@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="hi">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up — ShopKart</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Fraunces:wght@500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/css/account.css" />
+</head>
+
+<body>
+    <div class="shell">
+
+        <!-- Left brand panel (hidden on mobile) -->
+        <aside class="brand-panel">
+            <div class="brand-top">
+                <div class="brand-mark">V</div>
+                <div class="brand-name">VOGUE FASHION</div>
+            </div>
+
+            <div class="brand-mid">
+                <span class="tag-chip"><span class="dot"></span>Members-only deals</span>
+                <h2>Shop Smarter, Live Better.</h2>
+                <p>Find the latest trends, unbeatable deals, and a seamless shopping experience designed just for you.
+                </p>
+            </div>
+
+            <div class="brand-bottom">
+                <div class="stat"><b>50k+</b><span>Happy shoppers</span></div>
+                <div class="stat"><b>4.8★</b><span>Average rating</span></div>
+                <div class="stat"><b>24h</b><span>Fast delivery</span></div>
+            </div>
+        </aside>
+
+        <!-- Right form panel -->
+        <main class="form-panel">
+            <div class="form-wrap">
+
+                <div class="mobile-brand">
+                    <div class="brand-mark">S</div>
+                    <div class="brand-name">ShopKart</div>
+                </div>
+
+                <span class="eyebrow">Get started</span>
+                <h1>Create your account</h1>
+                <p class="subtitle">Sirf 30 second mein signup complete karein.</p>
+
+                <form id="signupForm" novalidate>
+                    <div class="field">
+                        <label for="name">Full name</label>
+                        <input type="text" id="name" placeholder="Aapka naam" autocomplete="name" />
+                    </div>
+
+                    <div class="field">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="you@example.com" autocomplete="email" />
+                    </div>
+
+                    <div class="row-2">
+                        <div class="field">
+                            <label for="password">Password</label>
+                            <input type="password" id="password" placeholder="Min. 6 characters"
+                                autocomplete="new-password" />
+                        </div>
+                        <div class="field">
+                            <label for="confirmPassword">Confirm</label>
+                            <input type="password" id="confirmPassword" placeholder="Repeat password"
+                                autocomplete="new-password" />
+                        </div>
+                    </div>
+
+                    <div id="message" class="message"></div>
+
+                    <button type="submit" class="btn btn-accent">Create account</button>
+                </form>
+
+                <div class="switch">
+                    Account pehle se hai? <a href="/User/signin.html">Already Account</a>
+                </div>
+
+            </div>
+        </main>
+
+    </div>
+
+    <script src="/JS/account.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Sign In — ShopKart</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Fraunces:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/css/account.css" />
+</head>
+<body>
+  <div class="shell">
+
+    <!-- Left brand panel (hidden on mobile) -->
+    <aside class="brand-panel">
+      <div class="brand-top">
+        <div class="brand-mark">V</div>
+        <div class="brand-name">VOGUE FASHION</div>
+      </div>
+
+      <div class="brand-mid">
+        <span class="tag-chip"><span class="dot"></span>New arrivals weekly</span>
+       <h2>Discover Your Perfect Shopping Experience.</h2>
+<p>Explore premium products, enjoy fast delivery, secure payments, and exclusive member-only offers—all in one place.</p>
+      </div>
+
+      <div class="brand-bottom">
+        <div class="stat"><b>50k+</b><span>Happy shoppers</span></div>
+        <div class="stat"><b>4.8★</b><span>Average rating</span></div>
+        <div class="stat"><b>24h</b><span>Fast delivery</span></div>
+      </div>
+    </aside>
+
+    <!-- Right form panel -->
+    <main class="form-panel">
+      <div class="form-wrap">
+
+        <div class="mobile-brand">
+          <div class="brand-mark">S</div>
+          <div class="brand-name">ShopKart</div>
+        </div>
+
+        <!-- Sign in form (shown when logged out) -->
+        <div id="authFormSection">
+          <span class="eyebrow">Welcome back</span>
+          <h1>Sign in to your account</h1>
+          <p class="subtitle">Apna email aur password daal kar continue karein.</p>
+
+          <form id="signinForm" novalidate>
+            <div class="field">
+              <label for="email">Email</label>
+              <input type="email" id="email" placeholder="you@example.com" autocomplete="email" />
+            </div>
+
+            <div class="field">
+              <label for="password">Password</label>
+              <input type="password" id="password" placeholder="••••••••" autocomplete="current-password" />
+            </div>
+
+            <div id="message" class="message"></div>
+
+            <button type="submit" class="btn btn-accent">Sign in</button>
+          </form>
+
+          <div class="switch">
+            Account nahi hai? <a href="/User/signup.html">Create Account</a>
+          </div>
+        </div>
+
+        <!-- Dashboard (shown when logged in) -->
+        <div id="dashboardSection" style="display:none;">
+          <div class="session-badge">✓ Signed in</div>
+          <h1 id="welcomeName">Hello</h1>
+          <p class="subtitle" id="welcomeEmail"></p>
+          <button id="logoutBtn" class="btn logout-btn">Log out</button>
+         <a href="/index.html"> <button id="logoutBtn" class="btn logout-btn">Back to Home</button></a>
+        </div>
+
+      </div>
+    </main>
+
+  </div>
+
+  <script src="/JS/account.js"></script>
+</body>
+</html>
